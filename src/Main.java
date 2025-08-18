@@ -13,10 +13,28 @@ public class Main {
 
         // Testando a classe produto
         Produto produto1 = new Produto("Coca Cola");
-
+        System.out.println();
         produto1.setPreco(7);
+        produto1.setPreco(-10);
 
-        System.out.println("\n" + produto1.getNome() + " \nValor: R$" + produto1.getPreco());
+        System.out.println(produto1.getNome() + " \nValor: R$" + produto1.getPreco());
+
+        // Testando herança de classes
+        Atleta jogador = new Atleta("Felipe", "Futebol");
+
+        System.out.println("Nome: " + jogador.getNome());
+        System.out.println("Esporte: " + jogador.getEsporte());
+
+        // Usando as heranças da classe Veiculos
+        Carro meuCarro = new Carro("Ford", 4);
+        Bicicleta minhaBicicleta = new Bicicleta("Caloi", 18);
+
+        System.out.println("Carro: " + meuCarro.getMarca() + " com " + meuCarro.getNumeroDePortas()
+        + " portas.");
+        System.out.println("Bicicleta: " + minhaBicicleta.getMarca() + " com " + minhaBicicleta.numeroDeMarchas
+        + " marchas.");
+
+
 
 
     }

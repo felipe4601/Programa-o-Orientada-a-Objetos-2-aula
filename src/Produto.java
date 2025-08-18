@@ -15,7 +15,7 @@ public class Produto {
 
     public void setPreco(double preco){
         if(preco < 0){
-            System.out.println("O preço não pode ser negativo");
+            System.out.println("Erro: O preço não pode ser negativo");
         }
         else{
             this.preco = preco;
