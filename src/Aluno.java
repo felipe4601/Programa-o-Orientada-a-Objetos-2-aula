@@ -1,17 +1,13 @@
-public class Aluno {
+public class Aluno{
+    protected String nome;
 
-    private String nome;
-    private String matricula;
-
-    public Aluno(String nome, String matricula){
+    public Aluno(String nome){
         this.nome = nome;
-        this.matricula = matricula;
+
     }
 
     public String getNome() {
         return nome;
     }
-    public String getMatricula(){
-        return matricula;
-    }
+
 }

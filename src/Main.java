@@ -3,13 +3,11 @@ public class Main {
     public static void main(String[] args) {
         // Testando os métodos, que acessam os atributos nome e matrcula da
         // classe Aluno
-        Aluno aluno1 = new Aluno("Felipe", "2814942");
-        Aluno aluno2 = new Aluno("Clara","2343234" );
+        Aluno aluno1 = new Aluno("Felipe");
+        Aluno aluno2 = new Aluno("Clara");
         System.out.println("Aluno: " + aluno1.getNome());
-        System.out.println("Matrícula: " + aluno1.getMatricula());
-
         System.out.println("Aluno: " + aluno2.getNome());
-        System.out.println("Matrícula: " + aluno2.getMatricula());
+
 
         // Testando a classe produto
         Produto produto1 = new Produto("Coca Cola");
@@ -35,7 +33,7 @@ public class Main {
         + " marchas.");
 
         //Exercício 3 Funcionário e Gerente
-        Gerente chefe = new Gerente("Felipe", 8000,"Arquito de Software");
+        Gerente chefe = new Gerente("Felipe", 8000,"Arquiteto de Software");
         System.out.println("Nome: " + chefe.getNome());
         System.out.println("Salário: " + chefe.getSalario());
         System.out.println("Departamento: " + chefe.getDepartamento());
@@ -45,6 +43,18 @@ public class Main {
         Livro meuLivro = new Livro("A Arte da Guerra", 29.99, "Sun Tzu");
         meuLivro.exibirDetalhes();
 
+
+        // Exercício 5
+        Turma turmaB = new Turma("Turma de Java", 5);
+        Aluno joao = new Aluno("João");
+// Cria e adiciona alguns alunos
+        turmaB.adicionarAlunos(new Aluno("João"));
+        turmaB.adicionarAlunos(new Aluno("Maria"));
+        turmaB.adicionarAlunos(new Aluno("Pedro"));
+
+// Lista os alunos cadastrados
+
+        turmaB.listarAlunos();
 
     }
 }
