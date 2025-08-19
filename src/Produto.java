@@ -1,7 +1,12 @@
 public class Produto {
-    private String nome;
-    private double preco;
+    protected String nome;
+    protected double preco;
 
+    public Produto(String nome, double preco){
+        this.nome = nome;
+        this.preco = preco;
+    }
+    // Método Construtor com apenas 1 atributo
     public Produto(String nome){
         this.nome = nome;
     }

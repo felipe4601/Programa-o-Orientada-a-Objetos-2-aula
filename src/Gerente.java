@@ -1,6 +1,6 @@
 public class Gerente extends Funcionario{
     // Classe filha que herda os comportamentos da classe funcionario(classe mãe)
-    protected String departamento;
+    private String departamento;
 
     // Criando método construtor
     public Gerente(String nome, double salario, String departamento){

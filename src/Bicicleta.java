@@ -1,9 +1,10 @@
 public class Bicicleta extends Veiculos{
-    protected int numeroDeMarchas;
+    private int numeroDeMarchas;
+
 
     // Criando método construtor
     public Bicicleta (String marca, int numeroDeMarchas){
-        super(marca);
+        super(marca);// Chama o construtor da classe pai
         this.numeroDeMarchas = numeroDeMarchas;
     }
 

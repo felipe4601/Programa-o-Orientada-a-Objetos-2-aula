@@ -31,10 +31,19 @@ public class Main {
 
         System.out.println("Carro: " + meuCarro.getMarca() + " com " + meuCarro.getNumeroDePortas()
         + " portas.");
-        System.out.println("Bicicleta: " + minhaBicicleta.getMarca() + " com " + minhaBicicleta.numeroDeMarchas
+        System.out.println("Bicicleta: " + minhaBicicleta.getMarca() + " com " + minhaBicicleta.getNumeroDeMarchas()
         + " marchas.");
 
+        //Exercício 3 Funcionário e Gerente
+        Gerente chefe = new Gerente("Felipe", 8000,"Arquito de Software");
+        System.out.println("Nome: " + chefe.getNome());
+        System.out.println("Salário: " + chefe.getSalario());
+        System.out.println("Departamento: " + chefe.getDepartamento());
 
+
+        // Exercício 4 Produto e livro
+        Livro meuLivro = new Livro("A Arte da Guerra", 29.99, "Sun Tzu");
+        meuLivro.exibirDetalhes();
 
 
     }

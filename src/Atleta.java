@@ -1,5 +1,5 @@
 public class Atleta extends Pessoa{
-    protected String esporte;
+    private String esporte;
 
     // Iniciando Construtor
     public Atleta(String nome, String esporte){
